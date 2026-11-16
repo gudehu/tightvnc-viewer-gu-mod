@@ -54,7 +54,7 @@ TightVNC 2.x 是遵循 GNU GPL v2 的开源分支，4.x 为闭源商业分支，
 直接执行 `bin\tvnviewer.exe`，按原版 TightVNC 的方式输入地址与密码建立连接。亦可使用命令行参数：
 
 ```
-tvnviewer.exe 199.199.12.178:5900 -password=<密码>
+tvnviewer.exe 192.168.1.2:5900 -password=<密码>
 ```
 
 连接建立后，所有增强功能自动可用，无需额外配置。若需从源码构建，见第 7 节。
@@ -218,7 +218,6 @@ python tools/build.py
 | 项目 | 来源 / 许可 |
 | --- | --- |
 | 上游 | TightVNC 2.8.90 GPL（GlavSoft LLC），GNU GPL v2 |
-| 增强分支 | `chenall/tightvnc` 修改版 |
 | 本项目修改 | 见 [CHANGES.md](CHANGES.md)，源码以 `HU patch` 标注 |
 | 整体许可 | [GNU GPL v2](LICENSE)；第三方组件 zlib、libjpeg 保留各自许可 |
 | 合规说明 | [COMPLIANCE.md](COMPLIANCE.md)，含发布要求与自检结果 |
