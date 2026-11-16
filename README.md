@@ -1,4 +1,4 @@
-# tightVNC-gu mod
+# tightVNC Viewer-gu mod
 
 基于 [TightVNC 2.8.90](https://www.tightvnc.com/) GPL 源码构建的 Windows 远程查看器（Viewer）增强分支。在原生远程桌面查看能力之上，扩展了双向文件传输、远程程序启动、会话只读控制与输入体验优化等功能。
 
