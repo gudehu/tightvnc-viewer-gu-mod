@@ -1,0 +1,32 @@
+# Build outputs / intermediate files
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.iobj
+*.ipdb
+*.lib
+*.tlog
+*.lastbuildstate
+*.recipe
+*.cache
+*.res
+build.log
+_msbuild.log
+src/Release/
+src/Debug/
+src/ipch/
+.vs/
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+*.suo
+*.user
+*.VC.db
+__pycache__/
+*.pyc
+
+# Local preview artifact
+_README_preview.html

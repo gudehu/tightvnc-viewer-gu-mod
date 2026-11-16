@@ -1,0 +1,3 @@
+#include "winres.h"
+IDI_NOENTRY ICON "res\noentry.ico"
+IDI_CANDY ICON "res\candy.ico"
