@@ -11,7 +11,7 @@ GNU GPL v2 第 2 条要求：修改后的文件须带有显著的修改声明，
 ## 二、Viewer 功能修改（本次）
 
 1. **在原生 16 个按钮之后追加 12 个按钮**（新增命令 ID 216~227）
-   - 传文件与启动器类（8 个，来自 chenall 增强分支）：
+   - 传文件与启动器类（8 个）：
      - `发送文件`（223）：多选本地文件/文件夹，经 RFB 文件传输通道上传到远端 `C:\HU-vnc-send`；另支持拖放上传。
      - `获取文件`（216）：读取剪贴板中的远端路径，经文件传输通道下载到本机 `C:\HU-vnc-get`；也可按 Ctrl+Alt+G。
      - `get目录`（217）：在本机资源管理器打开 `C:\HU-vnc-get`。
@@ -20,7 +20,7 @@ GNU GPL v2 第 2 条要求：修改后的文件须带有显著的修改声明，
      - `远程cmd`（220）：远端 Win+R 输入 cmd 并回车（剪贴板粘贴方式）。
      - `本地txt`（221）：本机 ShellExecute 打开 notepad.exe。
      - `远程txt`（222）：远端 Win+R 输入 notepad 并回车。
-   - 控制体验增强类（4 个，本次新增）：
+   - 控制体验增强类（4 个）：
      - `仅查看`（224）：一键切换 view-only，配套系统级热键 Ctrl+Shift+O。
      - `Candy热键`（225）：向远端发送 Ctrl+F8。
      - `滚动到顶`（226）：滚动条回到垂直位置 0。
@@ -44,7 +44,7 @@ GNU GPL v2 第 2 条要求：修改后的文件须带有显著的修改声明，
    - 使用 `RegisterHotKey(MOD_CONTROL|MOD_SHIFT, 'O')` 注册 Ctrl+Shift+O，窗口模式与全屏模式均有效；替代原先不可靠的 Alt+O（Alt 会被系统菜单抢占）与全局钩子方案。
    - 涉及文件：`ViewerWindow.cpp/.h`。
 
-## 三、双向文件传输相关修改（上游修改版带来，随源码一并发布）
+## 三、双向文件传输相关修改
 
 - 新增本地/远端文件互传、拖放发送、Ctrl+Alt+G 取回、同名自动重命名、独立进度窗口与按日期日志等。
 - 涉及文件：`HuTransfer.cpp/.h`、`FileTransferMainDialog.cpp/.h`、`UploadOperation.cpp/.h`、`DownloadOperation.cpp/.h`、`HuRenameSupport.h`、`CopyFileEventListener.h`、`RfbKeySym.h` 等。
